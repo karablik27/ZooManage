@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Тестовый проект на .NET 7 как библиотека -->
+    <TargetFramework>net7.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- SDK для запуска xUnit -->
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+
+    <!-- xUnit и раннер -->
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+    <!-- Moq и FluentAssertions -->
+    <PackageReference Include="Moq" Version="4.20.2" />
+    <PackageReference Include="FluentAssertions" Version="8.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Проекты с вашим кодом -->
+    <ProjectReference Include="..\ZooDomain\ZooDomain.csproj" />
+    <ProjectReference Include="..\ZooInfrastructure\ZooInfrastructure.csproj" />
+    <ProjectReference Include="..\ZooApplication\ZooApplication.csproj" />
+  </ItemGroup>
+
+</Project>

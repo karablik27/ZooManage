@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "wf4MAd6xyDEroXDJsRjXp45eyJ6Ao1bGaKSKtm4QanYcP9YIleAHtcT5By+ea/97xpi46KELjYd1saU4ztshlw==",
+  "success": true,
+  "projectFilePath": "/Users/verhovnyjmag/Projects/Zoo/ZooPresentation/ZooPresentation.csproj",
+  "expectedPackageFiles": [
+    "/Users/verhovnyjmag/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "/Users/verhovnyjmag/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/verhovnyjmag/.nuget/packages/swashbuckle.aspnetcore/6.4.0/swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "/Users/verhovnyjmag/.nuget/packages/swashbuckle.aspnetcore.swagger/6.4.0/swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "/Users/verhovnyjmag/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.4.0/swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "/Users/verhovnyjmag/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.4.0/swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,254 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/verhovnyjmag/Projects/Zoo/ZooPresentation/ZooPresentation.csproj": {}
+  },
+  "projects": {
+    "/Users/verhovnyjmag/Projects/Zoo/ZooApplication/ZooApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/verhovnyjmag/Projects/Zoo/ZooApplication/ZooApplication.csproj",
+        "projectName": "ZooApplication",
+        "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooApplication/ZooApplication.csproj",
+        "packagesPath": "/Users/verhovnyjmag/.nuget/packages/",
+        "outputPath": "/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/verhovnyjmag/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj": {
+                "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj",
+        "projectName": "ZooDomain",
+        "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj",
+        "packagesPath": "/Users/verhovnyjmag/.nuget/packages/",
+        "outputPath": "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/verhovnyjmag/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/ZooInfrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/ZooInfrastructure.csproj",
+        "projectName": "ZooInfrastructure",
+        "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/ZooInfrastructure.csproj",
+        "packagesPath": "/Users/verhovnyjmag/.nuget/packages/",
+        "outputPath": "/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/verhovnyjmag/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/verhovnyjmag/Projects/Zoo/ZooApplication/ZooApplication.csproj": {
+                "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooApplication/ZooApplication.csproj"
+              },
+              "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj": {
+                "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/verhovnyjmag/Projects/Zoo/ZooPresentation/ZooPresentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/verhovnyjmag/Projects/Zoo/ZooPresentation/ZooPresentation.csproj",
+        "projectName": "ZooPresentation",
+        "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooPresentation/ZooPresentation.csproj",
+        "packagesPath": "/Users/verhovnyjmag/.nuget/packages/",
+        "outputPath": "/Users/verhovnyjmag/Projects/Zoo/ZooPresentation/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/verhovnyjmag/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/verhovnyjmag/Projects/Zoo/ZooApplication/ZooApplication.csproj": {
+                "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooApplication/ZooApplication.csproj"
+              },
+              "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj": {
+                "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooDomain/ZooDomain.csproj"
+              },
+              "/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/ZooInfrastructure.csproj": {
+                "projectPath": "/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/ZooInfrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

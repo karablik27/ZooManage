@@ -1,0 +1,83 @@
+﻿<Properties StartupConfiguration="{27C1035F-C509-46B3-93C3-66ABCE3AD858}|ZooAPI">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZooAPI/Program.cs">
+    <Files>
+      <File FileName="ZooAPI/Program.cs" Line="13" Column="34" />
+      <File FileName="ZooAPI/appsettings.json" Line="1" Column="1" />
+      <File FileName="ZooAPI/Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="ZooAPI/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="ZooAPI/Pages/Error.cshtml" Line="1" Column="1" />
+      <File FileName="ZooDomain/Enums/Gender.cs" Line="14" Column="1" />
+      <File FileName="ZooDomain/Enums/HealthStatus.cs" Line="14" Column="1" />
+      <File FileName="ZooDomain/Enums/EnclosureType.cs" Line="16" Column="1" />
+      <File FileName="ZooDomain/IDomainEvent.cs" Line="11" Column="1" />
+      <File FileName="ZooDomain/Entity.cs" Line="13" Column="22" />
+      <File FileName="ZooDomain/Action/AnimalMovedEvent.cs" Line="13" Column="6" />
+      <File FileName="ZooDomain/Action/FeedingTimeEvent.cs" Line="12" Column="16" />
+      <File FileName="ZooDomain/Entities/Animal.cs" Line="15" Column="35" />
+      <File FileName="ZooDomain/DomainException.cs" Line="13" Column="1" />
+      <File FileName="ZooDomain/Food.cs" Line="20" Column="19" />
+      <File FileName="ZooDomain/Entities/FeedingSchedule.cs" Line="16" Column="12" />
+      <File FileName="ZooDomain/Entities/Enclosure.cs" Line="15" Column="6" />
+      <File FileName="ZooDomain/Interfaces/IEnclosureRepository.cs" Line="15" Column="1" />
+      <File FileName="ZooDomain/Interfaces/IFeedingScheduleRepository.cs" Line="5" Column="2" />
+      <File FileName="ZooDomain/Action/EnclosureCleanedEvent.cs" Line="1" Column="1" />
+      <File FileName="ZooApplication/DTOs/AnimalDto.cs" Line="10" Column="17" />
+      <File FileName="ZooApplication/DTOs/EnclosureDto.cs" Line="11" Column="32" />
+      <File FileName="ZooApplication/DTOs/FeedingScheduleDto.cs" Line="12" Column="1" />
+      <File FileName="ZooApplication/DTOs/ZooStatsDto.cs" Line="12" Column="1" />
+      <File FileName="ZooApplication/Interfaces/Repositories/IAnimalRepository.cs" Line="12" Column="22" />
+      <File FileName="ZooApplication/Interfaces/Repositories/IEnclosureRepository.cs" Line="6" Column="2" />
+      <File FileName="ZooApplication/Interfaces/Services/IEventDispatcher.cs" Line="6" Column="18" />
+      <File FileName="ZooApplication/Interfaces/Services/IAnimalTransferService.cs" Line="12" Column="1" />
+      <File FileName="ZooApplication/Interfaces/Repositories/IFeedingScheduleRepository.cs" Line="17" Column="2" />
+      <File FileName="ZooApplication/Interfaces/Services/IZooStatisticsService.cs" Line="15" Column="1" />
+      <File FileName="ZooApplication/AnimalTransferService.cs" Line="68" Column="1" />
+      <File FileName="ZooApplication/FeedingOrganizationService.cs" Line="89" Column="1" />
+      <File FileName="ZooApplication/Interfaces/Services/IFeedingOrganizationService.cs" Line="8" Column="19" />
+      <File FileName="ZooApplication/ZooStatisticsService.cs" Line="35" Column="52" />
+      <File FileName="ZooInfrastructure/EventDispatcher.cs" Line="2" Column="24" />
+      <File FileName="ZooInfrastructure/InMemory/EmptyClass.cs" Line="6" Column="2" />
+      <File FileName="ZooInfrastructure/InMemory/InMemoryFeedingScheduleRepository.cs" Line="6" Column="2" />
+      <File FileName="ZooInfrastructure/InMemory/InMemoryEnclosureRepository.cs" Line="23" Column="1" />
+      <File FileName="ZooAPI/Models/CreateAnimalRequest.cs" Line="5" Column="2" />
+      <File FileName="ZooAPI/Models/CreateEnclosureRequest.cs" Line="5" Column="2" />
+      <File FileName="ZooAPI/Models/CreateFeedingRequest.cs" Line="12" Column="1" />
+      <File FileName="ZooAPI/Controllers/AnimalsController.cs" Line="86" Column="6" />
+      <File FileName="ZooAPI/Controllers/EnclosuresController.cs" Line="36" Column="34" />
+      <File FileName="ZooAPI/Controllers/FeedingsController.cs" Line="24" Column="1" />
+      <File FileName="ZooAPI/Controllers/StatisticsController.cs" Line="8" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Zoo" expanded="True">
+            <Node name="ZooApplication" expanded="True">
+              <Node name="DTOs" expanded="True" />
+              <Node name="Interfaces" expanded="True">
+                <Node name="Repositories" expanded="True" />
+                <Node name="Services" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="ZooDomain" expanded="True">
+              <Node name="Action" expanded="True" />
+              <Node name="Entities" expanded="True" />
+            </Node>
+            <Node name="ZooInfrastructure" expanded="True">
+              <Node name="InMemory" expanded="True" />
+            </Node>
+            <Node name="ZooPresentation" expanded="True" selected="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ZooTests FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.ZooPresentation PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+</Properties>

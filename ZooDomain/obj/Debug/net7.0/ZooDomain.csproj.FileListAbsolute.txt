@@ -1,0 +1,11 @@
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/bin/Debug/net7.0/ZooDomain.deps.json
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/bin/Debug/net7.0/ZooDomain.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/bin/Debug/net7.0/ZooDomain.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/Debug/net7.0/ZooDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/Debug/net7.0/ZooDomain.AssemblyInfoInputs.cache
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/Debug/net7.0/ZooDomain.AssemblyInfo.cs
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/Debug/net7.0/ZooDomain.csproj.CoreCompileInputs.cache
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/Debug/net7.0/ZooDomain.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/Debug/net7.0/refint/ZooDomain.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/Debug/net7.0/ZooDomain.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooDomain/obj/Debug/net7.0/ref/ZooDomain.dll

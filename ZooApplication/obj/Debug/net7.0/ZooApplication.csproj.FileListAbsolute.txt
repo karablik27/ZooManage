@@ -1,0 +1,15 @@
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/bin/Debug/net7.0/ZooApplication.deps.json
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/bin/Debug/net7.0/ZooApplication.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/bin/Debug/net7.0/ZooApplication.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/bin/Debug/net7.0/ZooDomain.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/bin/Debug/net7.0/ZooDomain.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ZooApplication.csproj.AssemblyReference.cache
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ZooApplication.GeneratedMSBuildEditorConfig.editorconfig
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ZooApplication.AssemblyInfoInputs.cache
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ZooApplication.AssemblyInfo.cs
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ZooApplication.csproj.CoreCompileInputs.cache
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ZooApplication.csproj.CopyComplete
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ZooApplication.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/refint/ZooApplication.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ZooApplication.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooApplication/obj/Debug/net7.0/ref/ZooApplication.dll

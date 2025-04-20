@@ -1,0 +1,17 @@
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/bin/Debug/net7.0/ZooInfrastructure.deps.json
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/bin/Debug/net7.0/ZooInfrastructure.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/bin/Debug/net7.0/ZooInfrastructure.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/bin/Debug/net7.0/ZooApplication.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/bin/Debug/net7.0/ZooDomain.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/bin/Debug/net7.0/ZooDomain.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/bin/Debug/net7.0/ZooApplication.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ZooInfrastructure.csproj.AssemblyReference.cache
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ZooInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ZooInfrastructure.AssemblyInfoInputs.cache
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ZooInfrastructure.AssemblyInfo.cs
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ZooInfrastructure.csproj.CoreCompileInputs.cache
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ZooInfrastructure.csproj.CopyComplete
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ZooInfrastructure.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/refint/ZooInfrastructure.dll
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ZooInfrastructure.pdb
+/Users/verhovnyjmag/Projects/Zoo/ZooInfrastructure/obj/Debug/net7.0/ref/ZooInfrastructure.dll

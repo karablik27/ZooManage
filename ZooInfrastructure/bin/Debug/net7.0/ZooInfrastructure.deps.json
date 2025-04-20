@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ZooInfrastructure/1.0.0": {
+        "dependencies": {
+          "ZooApplication": "1.0.0",
+          "ZooDomain": "1.0.0"
+        },
+        "runtime": {
+          "ZooInfrastructure.dll": {}
+        }
+      },
+      "ZooApplication/1.0.0": {
+        "dependencies": {
+          "ZooDomain": "1.0.0"
+        },
+        "runtime": {
+          "ZooApplication.dll": {}
+        }
+      },
+      "ZooDomain/1.0.0": {
+        "runtime": {
+          "ZooDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ZooInfrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ZooApplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ZooDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
