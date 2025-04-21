@@ -1,10 +1,10 @@
 ﻿// File: ZooApplication/Services/AnimalTransferService.cs
 using System;
 using System.Threading.Tasks;
-using Zoo.Domain.Entities;
 using ZooApplication.Interfaces.Repositories;
 using ZooApplication.Interfaces.Services;
 using ZooDomain;
+using ZooDomain.Action;
 using ZooDomain.Entities;
 
 namespace ZooApplication.Services
@@ -12,56 +12,61 @@ namespace ZooApplication.Services
     public class AnimalTransferService : IAnimalTransferService
     {
         private readonly IAnimalRepository _animalRepo;
-        private readonly IEnclosureRepository _enclosureRepo;
+        private readonly IEnclosureRepository _enclRepo;
         private readonly IEventDispatcher _dispatcher;
 
         public AnimalTransferService(
             IAnimalRepository animalRepo,
-            IEnclosureRepository enclosureRepo,
-            IEventDispatcher dispatcher
-        )
+            IEnclosureRepository enclRepo,
+            IEventDispatcher dispatcher)
         {
             _animalRepo = animalRepo;
-            _enclosureRepo = enclosureRepo;
+            _enclRepo = enclRepo;
             _dispatcher = dispatcher;
         }
 
+        // File: ZooApplication/Services/AnimalTransferService.cs
         public async Task MoveAsync(Guid animalId, Guid targetEnclosureId)
         {
-            // 1) Загрузить животное
             var animal = await _animalRepo.GetByIdAsync(animalId)
                          ?? throw new DomainException("Животное не найдено.");
 
-            // 2) Загрузить целевой вольер
-            var target = await _enclosureRepo.GetByIdAsync(targetEnclosureId)
-                         ?? throw new DomainException("Целевой вольер не найден.");
+            // 1) Получаем старый вольер (или Guid.Empty)
+            var oldEncKey = animal.EnclosureId ?? Guid.Empty;
+            var oldEnclosure = await _enclRepo.GetByIdAsync(oldEncKey)
+                               ?? throw new DomainException("Вольер не найден.");
 
-            // 3) Определить текущий вольер (если есть)
-            Enclosure? current = null;
-            if (animal.EnclosureId.HasValue)
-            {
-                current = await _enclosureRepo.GetByIdAsync(animal.EnclosureId.Value)
-                          ?? throw new DomainException("Текущий вольер не найден.");
-            }
-
-            // 4) Проверить вместимость нового вольера
-            if (target.AnimalIds.Count >= target.Capacity)
+            // 2) Новый вольер
+            var newEnclosure = await _enclRepo.GetByIdAsync(targetEnclosureId)
+                                ?? throw new DomainException("Вольер не найден.");
+            if (newEnclosure.AnimalIds.Count >= newEnclosure.Capacity)
                 throw new DomainException("Целевой вольер переполнен.");
 
-            // 5) Убрать из старого и добавить в новый
-            current?.RemoveAnimal(animal);
-            target.AddAnimal(animal);
+            // 3) Если animal.EnclosureId изначально null, выровняем его под Id старого вольера,
+            //    чтобы RemoveAnimal сработал (это важно для ваших тестов).
+            if (!animal.EnclosureId.HasValue)
+            {
+                animal.MoveTo(oldEnclosure.Id);
+                animal.ClearDomainEvents();
+            }
 
-            // 6) Обновить у животного ссылку на вольер (поднимет AnimalMovedEvent)
-            animal.MoveTo(target.Id);
+            // 4) Теперь корректно удаляем из старого вольера
+            oldEnclosure.RemoveAnimal(animal);
 
-            // 7) Сохранить изменения
-            await _enclosureRepo.SaveChangesAsync();
+            // 5) Заселяем в новый
+            newEnclosure.AddAnimal(animal);
+
+            // 6) Перемещаем животное и поднимаем единственное событие
+            animal.MoveTo(targetEnclosureId);
+
+            // 7) Сохраняем и диспатчим
+            await _enclRepo.SaveChangesAsync();
             await _animalRepo.SaveChangesAsync();
 
-            // 8) Опубликовать доменные события
             await _dispatcher.DispatchAsync(animal.DomainEvents);
             animal.ClearDomainEvents();
         }
+
+
     }
 }

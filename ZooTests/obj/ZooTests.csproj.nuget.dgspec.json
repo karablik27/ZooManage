@@ -222,17 +222,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "FluentAssertions": {
-              "target": "Package",
-              "version": "[8.2.0, )"
-            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.7.2, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.20.2, )"
             },
             "xunit": {
               "target": "Package",

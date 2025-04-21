@@ -1,16 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// File: ZooApplication/Services/FeedingOrganizationService.cs
+using System;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using ZooApplication.DTOs;
 using ZooApplication.Interfaces.Repositories;
 using ZooApplication.Interfaces.Services;
 using ZooDomain;
+using ZooDomain.Action;
 using ZooDomain.Entities;
 
 namespace ZooApplication.Services
 {
-    /// <inheritdoc />
     public class FeedingOrganizationService : IFeedingOrganizationService
     {
         private readonly IFeedingScheduleRepository _schedRepo;
@@ -20,8 +21,7 @@ namespace ZooApplication.Services
         public FeedingOrganizationService(
             IFeedingScheduleRepository schedRepo,
             IAnimalRepository animalRepo,
-            IEventDispatcher dispatcher
-        )
+            IEventDispatcher dispatcher)
         {
             _schedRepo = schedRepo;
             _animalRepo = animalRepo;
@@ -39,17 +39,15 @@ namespace ZooApplication.Services
                     s.FoodType,
                     s.IsCompleted
                 ))
-                .ToList();
+                .ToList()
+                .AsReadOnly();
         }
 
-        // Исправлено: теперь возвращаем Task<FeedingScheduleDto>
         public async Task<FeedingScheduleDto> AddFeedingAsync(FeedingScheduleDto dto)
         {
-            // Проверяем существование животного
             var animal = await _animalRepo.GetByIdAsync(dto.AnimalId)
                          ?? throw new DomainException("Животное не найдено.");
 
-            // Создаём и сохраняем новую запись
             var schedule = new FeedingSchedule(
                 dto.AnimalId,
                 dto.FeedingTime,
@@ -59,11 +57,15 @@ namespace ZooApplication.Services
             await _schedRepo.AddAsync(schedule);
             await _schedRepo.SaveChangesAsync();
 
-            // Публикация событий
+            // Поднимаем событие сразу после создания
+            schedule.AddDomainEvent(new FeedingTimeEvent(
+                schedule.AnimalId,
+                schedule.FeedingTime,
+                schedule.FoodType
+            ));
             await _dispatcher.DispatchAsync(schedule.DomainEvents);
             schedule.ClearDomainEvents();
 
-            // Возвращаем DTO с заполненным Id и текущим флагом IsCompleted
             return new FeedingScheduleDto(
                 schedule.Id,
                 schedule.AnimalId,
@@ -78,7 +80,7 @@ namespace ZooApplication.Services
             var schedule = await _schedRepo.GetByIdAsync(scheduleId)
                            ?? throw new DomainException("Запись о кормлении не найдена.");
 
-            schedule.MarkCompleted(); // поднимет FeedingTimeEvent
+            schedule.MarkCompleted();  // установит IsCompleted и добавит FeedingTimeEvent
 
             await _schedRepo.SaveChangesAsync();
             await _dispatcher.DispatchAsync(schedule.DomainEvents);
