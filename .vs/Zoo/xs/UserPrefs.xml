@@ -1,24 +1,19 @@
 ﻿<Properties StartupConfiguration="{27C1035F-C509-46B3-93C3-66ABCE3AD858}|ZooAPI">
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ZooTests/Domain/AnimalTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ZooTests/Application/AnimalTransferServiceTests.cs">
     <Files>
-      <File FileName="ZooAPI/Pages/_ViewImports.cshtml" />
-      <File FileName="ZooAPI/Pages/_ViewStart.cshtml" />
-      <File FileName="ZooAPI/Pages/Error.cshtml" />
       <File FileName="ZooDomain/Enums/Gender.cs" />
       <File FileName="ZooDomain/Enums/HealthStatus.cs" />
       <File FileName="ZooDomain/Enums/EnclosureType.cs" />
       <File FileName="ZooDomain/IDomainEvent.cs" />
-      <File FileName="ZooDomain/Entity.cs" />
+      <File FileName="ZooDomain/Entity.cs" Line="19" Column="36" />
       <File FileName="ZooDomain/Action/AnimalMovedEvent.cs" />
       <File FileName="ZooDomain/Action/FeedingTimeEvent.cs" />
-      <File FileName="ZooDomain/Entities/Animal.cs" />
-      <File FileName="ZooDomain/Entities/FeedingSchedule.cs" />
-      <File FileName="ZooDomain/Entities/Enclosure.cs" />
+      <File FileName="ZooDomain/Entities/Animal.cs" Line="9" Column="19" />
+      <File FileName="ZooDomain/Entities/FeedingSchedule.cs" Line="9" Column="39" />
+      <File FileName="ZooDomain/Entities/Enclosure.cs" Line="1" Column="1" />
       <File FileName="ZooDomain/Action/EnclosureCleanedEvent.cs" />
       <File FileName="ZooApplication/DTOs/AnimalDto.cs" />
       <File FileName="ZooApplication/DTOs/EnclosureDto.cs" />
@@ -28,45 +23,48 @@
       <File FileName="ZooApplication/Interfaces/Repositories/IEnclosureRepository.cs" />
       <File FileName="ZooApplication/Interfaces/Services/IEventDispatcher.cs" />
       <File FileName="ZooApplication/Interfaces/Services/IAnimalTransferService.cs" />
-      <File FileName="ZooApplication/Interfaces/Repositories/IFeedingScheduleRepository.cs" />
+      <File FileName="ZooApplication/Interfaces/Repositories/IFeedingScheduleRepository.cs" Line="11" Column="34" />
       <File FileName="ZooApplication/Interfaces/Services/IZooStatisticsService.cs" />
-      <File FileName="ZooApplication/AnimalTransferService.cs" />
-      <File FileName="ZooApplication/FeedingOrganizationService.cs" />
-      <File FileName="ZooApplication/Interfaces/Services/IFeedingOrganizationService.cs" />
-      <File FileName="ZooApplication/ZooStatisticsService.cs" />
+      <File FileName="ZooApplication/AnimalTransferService.cs" Line="40" Column="78" />
+      <File FileName="ZooApplication/FeedingOrganizationService.cs" Line="91" Column="1" />
+      <File FileName="ZooApplication/Interfaces/Services/IFeedingOrganizationService.cs" Line="9" Column="43" />
+      <File FileName="ZooApplication/ZooStatisticsService.cs" Line="7" Column="1" />
       <File FileName="ZooInfrastructure/EventDispatcher.cs" />
       <File FileName="ZooInfrastructure/InMemory/InMemoryFeedingScheduleRepository.cs" />
       <File FileName="ZooInfrastructure/InMemory/InMemoryEnclosureRepository.cs" />
-      <File FileName="ZooAPI/Models/CreateAnimalRequest.cs" Line="5" Column="2" />
-      <File FileName="ZooAPI/Models/CreateEnclosureRequest.cs" />
-      <File FileName="ZooAPI/Models/CreateFeedingRequest.cs" />
-      <File FileName="ZooAPI/Controllers/AnimalsController.cs" Line="86" Column="6" />
-      <File FileName="ZooAPI/Controllers/EnclosuresController.cs" />
-      <File FileName="ZooAPI/Controllers/FeedingsController.cs" Line="24" Column="1" />
-      <File FileName="ZooAPI/Controllers/StatisticsController.cs" />
-      <File FileName="ZooPresentation/Program.cs" Line="10" Column="42" />
-      <File FileName="ZooPresentation/Properties/launchSettings.json" Line="7" Column="19" />
-      <File FileName="ZooPresentation/Pages/_ViewStart.cshtml" Line="1" Column="1" />
-      <File FileName="ZooPresentation/Pages/Error.cshtml" Line="1" Column="1" />
-      <File FileName="ZooPresentation/Pages/Index.cshtml" Line="1" Column="1" />
-      <File FileName="ZooPresentation/Pages/Privacy.cshtml" Line="1" Column="1" />
-      <File FileName="ZooPresentation/appsettings.json" Line="1" Column="1" />
-      <File FileName="ZooPresentation/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="ZooPresentation/wwwroot/css/site.css" Line="1" Column="1" />
-      <File FileName="ZooPresentation/wwwroot/js/site.js" Line="1" Column="1" />
-      <File FileName="ZooPresentation/Pages/Shared/_Layout.cshtml" Line="1" Column="1" />
-      <File FileName="ZooPresentation/Pages/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
-      <File FileName="ZooTests/Domain/AnimalTests.cs" Line="9" Column="1" />
-      <File FileName="ZooTests/Domain/FeedingScheduleTests.cs" Line="7" Column="19" />
-      <File FileName="ZooTests/AnimalTransferServiceTests.cs" Line="13" Column="24" />
-      <File FileName="ZooTests/FeedingOrganizationServiceTests.cs" Line="14" Column="23" />
-      <File FileName="ZooTests/ZooStatisticsServiceTests.cs" Line="12" Column="17" />
-      <File FileName="ZooTests/TestResults/c3b84d66-f83f-49cf-a4e1-bdad578d15bb/coverage.cobertura.xml" Line="1177" Column="34" />
+      <File FileName="ZooPresentation/Program.cs" />
+      <File FileName="ZooPresentation/Properties/launchSettings.json" />
+      <File FileName="ZooPresentation/Pages/_ViewStart.cshtml" />
+      <File FileName="ZooPresentation/Pages/Error.cshtml" />
+      <File FileName="ZooPresentation/Pages/Index.cshtml" />
+      <File FileName="ZooPresentation/Pages/Privacy.cshtml" />
+      <File FileName="ZooPresentation/appsettings.json" />
+      <File FileName="ZooPresentation/appsettings.Development.json" />
+      <File FileName="ZooPresentation/wwwroot/css/site.css" />
+      <File FileName="ZooPresentation/wwwroot/js/site.js" />
+      <File FileName="ZooPresentation/Pages/Shared/_Layout.cshtml" />
+      <File FileName="ZooPresentation/Pages/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="ZooTests/Domain/AnimalTests.cs" Line="37" Column="37" />
+      <File FileName="ZooTests/Domain/FeedingScheduleTests.cs" Line="50" Column="1" />
+      <File FileName="ZooTests/Application/AnimalTransferServiceTests.cs" Line="124" Column="10" />
+      <File FileName="ZooTests/Application/FeedingOrganizationServiceTests.cs" Line="201" Column="1" />
+      <File FileName="ZooTests/Application/ZooStatisticsServiceTests.cs" Line="118" Column="1" />
+      <File FileName="ZooDomain/IFeedingScheduleRepository.cs" Line="13" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Zoo" expanded="True">
+          <Node name="Zoo">
+            <Node name="ZooApplication" expanded="True">
+              <Node name="Interfaces" expanded="True">
+                <Node name="Repositories" expanded="True" />
+                <Node name="Services" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="ZooDomain" expanded="True">
+              <Node name="Entities" expanded="True" />
+              <Node name="Enums" expanded="True" />
+            </Node>
             <Node name="ZooPresentation" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
@@ -82,6 +80,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.ZooPresentation PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
 </Properties>
